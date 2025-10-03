@@ -15,7 +15,7 @@
 # - Time filtering uses mtime (modification time) as a practical proxy.
 # - /proc is virtual; we snapshot key files/dirs and per-PID basics.
 # - “Foreign” LKMs are modules outside /lib/modules/$(uname -r) and/or unsigned/unknown signer.
-# - Optional parsers export human-readable login/journal timelines (best-effort, tool-availability dependent).
+
 
 import argparse
 import datetime
@@ -652,3 +652,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
